@@ -1,0 +1,230 @@
+*{
+    font-family: 'Roboto';
+}
+
+.row{
+    background: rgba(128, 128, 128, 0.405);
+    height:100vh;
+}
+
+.column{
+    float:left;
+}
+
+.left{
+    width:65%;
+    background-color: pink;
+    font-size: 3.2vw;
+    height: 100%;
+    align-content: center;
+}
+
+.left h1{
+    padding:10%;
+    font-weight: 200; 
+}
+
+.right{
+    background-image: url("/img/pink-cloud.jpg");
+    height:100%;
+    width:35%;
+}
+
+.right ul{
+    list-style:none !important;
+    font-size: 3vw;
+}
+
+.right a{
+    text-decoration: none;
+    color: black;
+}
+
+.right a:hover{
+    color: pink;
+}
+
+.chinese{
+    color: rgba(115, 115, 115, 0.403);
+}
+
+.about-me{
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+.about-me-content{
+    float:left;
+    padding-top: 10px;
+}
+
+.one{
+    width:45%;
+}
+
+.two{
+    width:55%;
+    justify-content: center;
+    align-content: center;
+}
+
+#pink-door{
+    border-radius:25%;
+    padding:15%;
+    width:60%;
+    justify-content: center;
+}
+
+#about-me-text{
+    width:40%;  
+    padding-left: 5%; 
+    padding-top: 5%;
+    align-items: center;
+}
+
+#about-me-text h1{
+    font-weight: 300;
+    font-size: 4vw;
+}
+
+#about-me-text h2{
+    border-radius: 10%;
+    font-size: 2vw;
+    justify-content: center;
+    font-weight: 100;
+}
+
+.projects{
+    background-color: pink;
+    height: 100vh;
+}
+
+.project-type{
+    float:left;
+    width:33.33%;
+    padding-top: 10%;
+}
+
+/*VERY IMPORTANT - you gotta clear float after columns*/
+.projects:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.project-type h1{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 200;
+}
+
+#project-img{
+    background-color: aliceblue;
+    width: 60%;
+    height: 60%;
+    border-radius: 10%;
+    margin-left: 20%;
+    object-fit: cover;
+
+}
+
+
+
+
+
+/*FIX THIS SECTION SOON*/
+
+
+.fun{
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.folder{
+    height:85%;
+    background-color: rgb(185, 185, 185);
+    margin-top: auto;
+    border-radius: 30px 0 0 0;
+}
+
+
+.folder-tag{
+    height:10%;
+    width:25%;
+    background-color: bisque;
+    margin-top: 5%;
+    margin-left: auto; 
+    margin-right: 0;
+    border-radius: 25px 25px 0 0;
+    background-color: rgb(185, 185, 185);
+}
+
+.folder-tag h1{
+    text-align: center;
+    font-weight: 300;
+}
+
+
+/*QR-CODE SECTION*/
+
+.qr-code{
+    margin-right:auto;
+    margin-left: auto;
+    margin-top: 50px;
+    width: 50%;
+    padding: 25px 35px;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.qr-code p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.qr-code input{
+    width:95%;
+    height: 30px;
+    border: 1px solid pink;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 10px;
+    border-radius: 5px;
+}
+
+.qr-code button{
+    width: 100%;
+    height: 50px;
+    background: pink;
+    color: #fff;
+    border:0;
+    outline:0;
+    border-radius: 5px;
+    box-shadow:0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+#imgBox{
+    width:200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgBox img{
+    width:100%;
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin:10px auto;
+    border: 1px solid #d1d1d1;
+}

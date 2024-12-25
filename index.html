@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suri Tian</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Oi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="row" id="intro">
+        <div class="column left" id="intro-text">
+            <h1>HI <span class="chinese">你好</span><br>I'M <span class="chinese">我是</span><br>SURI TIAN <span class="chinese">田润欣</span></h1>
+        </div>
+        
+        <div class="column right" id="intro-menu">
+            <ul>
+                <li>
+                    <a href="#about-me">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#projects">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="#fun">FUN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="about-me" id="about-me">
+        <div class="about-me-content one">
+            <img id="pink-door" src="/img/pink-door.png">
+        </div>
+
+        <div class="about-me-content two" id="about-me-text">
+            <h1>ABOUT</h1>
+            <h2>Hi! I’m Suri, a high school senior located in Ontario, Canada. I’m passionate about technological entrepreneurship and mathematics.</h2>
+        </div>
+
+        <div class="collections"></div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="project-type zephyrblade">
+            <img id="project-img" src="/img/pink-turbine-1.jpg">
+            <h1>SHAD ULeth 24'</h1>
+        </div>
+        <div class="project-type video-game">
+            <img id="project-img" src="/img/loading.png">
+            <h1>Coming Soon</h1>
+        </div>
+        <div class="project-type ball">
+            <img id="project-img" src="/img/python.jfif">
+            <h1>Python Ballz</h1>
+        </div>
+    </div>
+
+    <div class="fun" id="fun">
+        <div class="folder-tag">
+            <h1>QR-Code</h1>
+        </div>
+
+        <div class="folder">
+            <div class="qr-code">
+                <p>Enter your text or URL</p>
+                <input type="text" placeholder="Text or URL" id="qrText">
+            
+                <div id="imgBox">
+                    <img src="" id="qrImage">
+                </div>
+            
+                <button onclick="generateQR()">Generate QR Code</button>
+            </div>
+        </div>
+
+
+
+
+        
+        <!--
+        <div class="qr-code">
+            <p>Enter your text or URL</p>
+            <input type="text" placeholder="Text or URL" id="qrText">
+        
+            <div id="imgBox">
+                <img src="" id="qrImage">
+            </div>
+        
+            <button onclick="generateQR()">Generate QR Code</button>
+        
+        </div>
+        <div class="to-do-list"></div>
+        -->
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
